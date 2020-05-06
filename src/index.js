@@ -2,38 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class TarjetaFruta extends React.Component {
-  constructor() {
-    super();
+  
+  state = {
+    cantidad: 0
+  };
 
-    /* this.agregar = this.agregar.bind(this);
-    this.quitar = this.quitar.bind(this); */
-
-    /* hacer bind de forma dinámica */
-    const METHODS = [
-      'agregar',
-      'quitar',
-      'limpiar'
-    ];
-    METHODS.forEach((method) => {
-      this[method] = this[method].bind(this);
-    });
-    /* fin de hacer bind de forma dinámica */
-
-    this.state = {
-      cantidad: 0
-    };
-  }
-  agregar() {
+  agregar = () => {
     this.setState({
       cantidad: this.state.cantidad + 1
     });
   }
-  quitar() {
+  quitar = () => {
     this.setState({
       cantidad: this.state.cantidad - 1
     });
   }
-  limpiar() {
+  limpiar = () => {
     this.setState({
       cantidad: 0
     });
