@@ -22,15 +22,35 @@ class TarjetaFruta extends React.Component {
     });
   }
   render() {
+
+    const hasItems = this.state.cantidad > 0;
+
+    const styles = {
+      fontFamily: 'Elvetica, Arial, Tahoma',
+      margin: '0 auto',
+      border: '1px solid black',
+      marginBottom: '1em',
+      borderRadius: '0.5em',
+      padding: '1em',
+      background: hasItems ? 'linear-gradient(45deg, black, #4a02f7)' : '#FFF',
+      color: hasItems ? '#FFF' : '#000',
+      transition: 'all 400ms ease-out'
+    };
+
     return (
-      <div>
+      <div style={styles}>
         <h3>{this.props.name}</h3>
         <div>Cantidad: {this.state.cantidad}</div>
         <button onClick={this.agregar}>+</button>
         <button onClick={this.quitar}>-</button>
         <button onClick={this.limpiar}>Limpiar</button>
         <hr />
-        <p>{this.props.price}</p>
+        <p>
+          $ {this.props.price}
+        </p>
+        <p>
+          Total: {this.props.price * this.state.cantidad}
+        </p>
       </div>
     )
   }
