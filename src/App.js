@@ -4,13 +4,25 @@ import React, { Component } from 'react'
 // import Gato from './components/Gato'
 // import EventoMouse from './components/EventoMouse'
 // import EventoInput from './components/EventoInput'
-import ConservarEvento from './components/ConservarEvento'
+// import ConservarEvento from './components/ConservarEvento'
+import EventoPersonalizado from './components/EventoPersonalizado'
+import './components/EventoPersonalizado/global.css'
 
 class App extends Component {
 
-  state = {
+  /* state = {
     fuerza: 100,
     vidasRestantes: 7
+  } */
+
+  state = {
+    mensaje: ''
+  }
+
+  manejador = (event) => {
+    this.setState({
+      mensaje: event
+    })
   }
 
   render() {
@@ -45,7 +57,15 @@ class App extends Component {
           {/* <EventoInput /> */}
 
           {/* COMPONENTE CONSERVAR-EVENTO */}
-          <ConservarEvento />
+          {/* <ConservarEvento /> */}
+
+          {/* COMPONENTE EVENTO-PERSONALIZADO */}
+          <div className="box red">
+            <EventoPersonalizado onSaludar={this.manejador} />
+            <h1>
+              Mensaje: {this.state.mensaje}
+            </h1>
+          </div>
 
 
         </div>
