@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 // import Contador from './components/Contador';
 // import Gato from './components/Gato'
 // import EventoMouse from './components/EventoMouse'
-import EventoInput from './components/EventoInput'
+// import EventoInput from './components/EventoInput'
+import ConservarEvento from './components/ConservarEvento'
 
 class App extends Component {
 
@@ -14,10 +15,10 @@ class App extends Component {
 
   render() {
 
-    const otrosDatos = {
+    /* const otrosDatos = {
       raza: 'Tropical',
       peleasNocturnas: 300
-    };
+    }; */
 
     return (
         <div>
@@ -41,7 +42,10 @@ class App extends Component {
           {/* <EventoMouse /> */}
           
           {/* COMPONENTE INPUT */}
-          <EventoInput />
+          {/* <EventoInput /> */}
+
+          {/* COMPONENTE CONSERVAR-EVENTO */}
+          <ConservarEvento />
 
 
         </div>
