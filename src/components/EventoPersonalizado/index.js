@@ -1,1 +1,1 @@
-export {default} from './EventoPersonalizado'
+export {default} from './EventoPersonalizadoPrincipal'
