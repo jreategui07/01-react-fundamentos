@@ -1,1 +1,1 @@
-export {default} from './Gato'
+export {default} from './GatoPrincipal'
