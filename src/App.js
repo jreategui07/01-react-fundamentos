@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 // import TarjetaFruta from './components/TarjetaFruta';
-import Contador from './components/Contador';
-import Gato from './components/Gato'
-import EventoMouse from './components/EventoMouse'
+// import Contador from './components/Contador';
+// import Gato from './components/Gato'
+// import EventoMouse from './components/EventoMouse'
+import EventoInput from './components/EventoInput'
 
 class App extends Component {
 
@@ -37,7 +38,10 @@ class App extends Component {
           /> */}
 
           {/* COMPONENTE EVENTO-MOUSE */}
-          <EventoMouse />
+          {/* <EventoMouse /> */}
+          
+          {/* COMPONENTE INPUT */}
+          <EventoInput />
 
 
         </div>
