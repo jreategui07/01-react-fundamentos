@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import TarjetaFruta from './components/TarjetaFruta';
+/* import TarjetaFruta from './components/TarjetaFruta';
 import Contador from './components/Contador';
 import GatoPrincipal from './components/Gato'
 import EventoMouse from './components/EventoMouse'
 import EventoInput from './components/EventoInput'
 import ConservarEvento from './components/ConservarEvento'
-import EventoPersonalizadoPrincipal from './components/EventoPersonalizado'
+import EventoPersonalizadoPrincipal from './components/EventoPersonalizado' */
+import Saludo from './components/Saludo'
  
 class App extends Component {
 
@@ -13,7 +14,7 @@ class App extends Component {
 
     return (
         <div>
-          <TarjetaFruta name={'Manzana'} price={5} />
+          {/* <TarjetaFruta name={'Manzana'} price={5} />
           <TarjetaFruta name={'Naranja'} price={4} />
           <TarjetaFruta name={'Pera'} price={3} />
           <Contador/>
@@ -21,7 +22,8 @@ class App extends Component {
           <EventoMouse />
           <EventoInput />
           <ConservarEvento />
-          <EventoPersonalizadoPrincipal />
+          <EventoPersonalizadoPrincipal /> */}
+          <Saludo saluda name="Jonathan" />
         </div>
     )
   }
