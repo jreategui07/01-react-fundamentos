@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 // import TarjetaFruta from './components/TarjetaFruta';
 import Contador from './components/Contador';
-
 import Gato from './components/Gato'
+import EventoMouse from './components/EventoMouse'
 
 class App extends Component {
 
@@ -20,16 +20,26 @@ class App extends Component {
 
     return (
         <div>
+          {/* COMPONENTE TARJETA-FRUTA */}
           {/* <TarjetaFruta name={'Manzana'} price={5} />
           <TarjetaFruta name={'Naranja'} price={4} />
           <TarjetaFruta name={'Pera'} price={3} /> */}
+          
+          {/* COMPONENTE CONTADOR */}
           {/* <Contador/> */}
-          <Gato
+
+          {/* COMPONENTE GATO */}
+          {/*  <Gato
             name="Garfiled"
             age="2 años"
             {...otrosDatos}
             {...this.state}
-          />
+          /> */}
+
+          {/* COMPONENTE EVENTO-MOUSE */}
+          <EventoMouse />
+
+
         </div>
     )
   }
