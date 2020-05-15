@@ -6,8 +6,9 @@ import EventoMouse from './components/EventoMouse'
 import EventoInput from './components/EventoInput'
 import ConservarEvento from './components/ConservarEvento'
 import EventoPersonalizadoPrincipal from './components/EventoPersonalizado'
-import Saludo from './components/Saludo' */
-import Title from './components/Title';
+import Saludo from './components/Saludo'
+import Title from './components/Title'; */
+import InyectarHTML from './components/InyectarHTML';
  
 class App extends Component {
 
@@ -24,10 +25,11 @@ class App extends Component {
           <EventoInput />
           <ConservarEvento />
           <EventoPersonalizadoPrincipal />
-          <Saludo saluda name="Jonathan" /> */}
+          <Saludo saluda name="Jonathan" />
           <Title uiColor="purple">
             Ninja <em>PRO</em>!
-          </Title>
+          </Title> */}
+          <InyectarHTML />
         </div>
     )
   }
