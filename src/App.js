@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+/* import TarjetaFruta from './components/TarjetaFruta';
+import Contador from './components/Contador';
+import GatoPrincipal from './components/Gato'
+import EventoMouse from './components/EventoMouse'
+import EventoInput from './components/EventoInput'
+import ConservarEvento from './components/ConservarEvento'
+import EventoPersonalizadoPrincipal from './components/EventoPersonalizado'
+import Saludo from './components/Saludo'
+import Title from './components/Title';
+import InyectarHTML from './components/InyectarHTML';
+import Fragments from './components/Fragments'; */
+import PortalModalPrincipal from './components/PortalModal';
+ 
+class App extends Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+
+    return (
+        <div>
+          {/* <TarjetaFruta name={'Manzana'} price={5} />
+          <TarjetaFruta name={'Naranja'} price={4} />
+          <TarjetaFruta name={'Pera'} price={3} />
+          <Contador/>
+          <GatoPrincipal />
+          <EventoMouse />
+          <EventoInput />
+          <ConservarEvento />
+          <EventoPersonalizadoPrincipal />
+          <Saludo saluda name="Jonathan" />
+          <Title uiColor="purple">
+            Ninja <em>PRO</em>!
+          </Title>
+          <InyectarHTML />
+          <Fragments /> */}
+          <PortalModalPrincipal />
+        </div>
+    )
+  }
 }
 
 export default App;
