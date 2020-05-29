@@ -7,8 +7,10 @@ import EventoInput from './components/EventoInput'
 import ConservarEvento from './components/ConservarEvento'
 import EventoPersonalizadoPrincipal from './components/EventoPersonalizado'
 import Saludo from './components/Saludo'
-import Title from './components/Title'; */
+import Title from './components/Title';
 import InyectarHTML from './components/InyectarHTML';
+import Fragments from './components/Fragments'; */
+import PortalModalPrincipal from './components/PortalModal';
  
 class App extends Component {
 
@@ -28,8 +30,10 @@ class App extends Component {
           <Saludo saluda name="Jonathan" />
           <Title uiColor="purple">
             Ninja <em>PRO</em>!
-          </Title> */}
+          </Title>
           <InyectarHTML />
+          <Fragments /> */}
+          <PortalModalPrincipal />
         </div>
     )
   }
